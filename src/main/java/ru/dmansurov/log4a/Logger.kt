@@ -1,11 +1,8 @@
 package ru.dmansurov.log4a
 
-enum class LogLevel {
-    INFO,
-    DEBUG,
-    WARN,
-    ERROR,
-}
+import ru.dmansurov.log4a.appenders.Appender
+
+
 
 class Logger(private val name: String,
              private val minLogLevel: LogLevel,

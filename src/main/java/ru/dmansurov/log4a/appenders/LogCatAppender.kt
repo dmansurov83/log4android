@@ -1,10 +1,7 @@
-package ru.dmansurov.log4a
+package ru.dmansurov.log4a.appenders
 
 import android.util.Log
-
-interface Appender {
-    fun log(logLevel: LogLevel, name: String, msg: String)
-}
+import ru.dmansurov.log4a.LogLevel
 
 class LogCatAppender : Appender {
     override fun log(logLevel: LogLevel, name: String, msg: String) {
